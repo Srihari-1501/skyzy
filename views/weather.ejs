@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>skyzy</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <%# secret %>
+        <div class="whole">
+            <header
+                class="d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom nav-color ">
+                <a href="/"
+                    class=" link-body-emphasis text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-cloud-moon" viewBox="0 0 16 16">
+                        <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .625.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .509-.375A3.5 3.5 0 0 1 7 8m4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z"/>
+                        <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.5 5.5 0 0 1 1.055.209A3.6 3.6 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.58 3.58 0 0 1-2.241.634q.244.477.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
+                      </svg>
+                    <span class="fs-4 head">The Skyzy</span>
+                </a>
+                
+            </header>
+
+            <div class="container text-center col-5  search mb-5">
+
+              <div class="row">
+                <div class="col form-row">
+                  <form class="flex-wrap mt-2"  id="search" action="/search" method="POST">
+                    
+                    <input class="d-inline-flex form-control mb-2" style="width: 70%  !important;" type="search" name="searchPlace" placeholder="Place">
+                    <button type="submit" class="btn btn-primary mb-1">Search</button>
+                  </form> 
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="container mb-5 col-8 main ">
+                <div class="container row">
+                  <div class="col-6">
+                    <br>
+                
+                    <h6><svg xmlns="http://www.w3.org/2000/svg" width="24" height="36" fill="currentColor" class="bi bi-geo-alt-fill location" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg> <%= city %>
+                    </h6>
+                  </div>
+                  <div class="col-6 text-end">
+                    <br>
+                    <h6><%= time %> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="36" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                      <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527"/>
+                    </svg></h6>
+                  </div>
+                  <div class="col-12">
+                    <h1 class="temp mt-5"><%= temp %>°C
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-cloud-moon" viewBox="0 0 16 16">
+                            <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .625.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .509-.375A3.5 3.5 0 0 1 7 8m4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z"/>
+                            <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.5 5.5 0 0 1 1.055.209A3.6 3.6 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.58 3.58 0 0 1-2.241.634q.244.477.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
+                          </svg> -->
+                          <div id="icon"><img id="wicon" src="<%= icon %>" alt="Weather icon"></div>
+                    </h1>
+                    <h6 class="type mb-0 "> <%= climate %></h6>
+                    <p class="type-des"><%= climateD %> </p>
+                  </div>
+                  <br>
+                  <div class="col-6">
+                    <h6><%= date %></h6>
+                  </div>
+                
+                  <div class="col-6 text-end">
+                    <h6><%= day %></h6>
+                  </div>
+                  <br>
+                  <div class="col mt-2 text-center rounded border border-2 mx-1 mb-4">
+                    
+                    <h6 class="mt-2">HUMIDITY <br> <%= humidity %>%</h6>
+                  </div>
+                  <div class="col mt-2 text-center mx-1 border-2 rounded border mb-4">
+                    <h6 class="mt-2">VISIBLITY <br> <%= vis %>km</h6>
+                  </div>
+                  <div class="col mt-2 rounded mx-1 border-2 text-center border mb-4">
+                    <h6 class="mt-2">WIND <br> <%= wind %> </h6>
+                  </div>
+                  <div class="col mt-2 rounded mx-1 border-2 text-center border mb-4">
+                    <h6 class="mt-2">COUNTRY <br> <%= country %></h6>
+                  </div>
+                </div>
+            </div>
+
+            <h6>
+              <div class="container text-center col-5 last mt-3 ">
+                <div class="row">
+                  <div class="col mt-3  rounded border border-2 mx-2 my-3">
+                    <p class="my-1">MIN TEMP <br> <%= minT %>°C</p>
+                  </div>
+                  <div class="col mt-3  rounded border border-2 mx-2 my-3">
+                    <p class="my-1">FEEL LIKE <br><%= feelLike %>°C</p>
+                  </div>
+                  <div class="col mt-3  rounded border border-2 mx-2 my-3">
+                    <p class="my-1">MAX TEMP <br><%= maxT %>°C</p>
+                  </div>
+                </div>
+              </div>
+            </h6>
+        </div> 
+             
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
