@@ -22,7 +22,6 @@
       rel="stylesheet">
   </head>
   <body>
-    <%# secret %>
     <div class="whole">
       <header
         class="d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom nav-color ">
@@ -39,26 +38,13 @@
         </a>
       </header>
 
-      <!-- <div class="container text-center col-5  search mb-5">
-
-              <div class="row">
-                <div class="col form-row">
-                  <form class="flex-wrap mt-2"  id="search" action="/search" method="POST">
-                    
-                    <input class="d-inline-flex form-control mb-2" style="width: 70%  !important;" type="search" name="searchPlace" placeholder="Place">
-                    <button type="submit" class="btn btn-primary mb-1">Search</button>
-                  </form> 
-                </div>
-              </div>
-            </div>
-
-            <img src="/images/frontImage.png" width="300px" height="300px" alt=""> -->
+ 
       <div class="container">
         <div class="row  h-100 d-flex align-items-center justify-content-center ">
           <div class="col-6 mx-2 search">
             <form class="flex-wrap mt-2 text-center" id="search" action="/search"
               method="POST">
-              <input class="d-inline-flex form-control mb-2"
+              <input class="d-inline-flex form-control mb-2 border border-dark"
                 style="width: 70%  !important;" type="search" name="searchPlace"
                 placeholder="Enter your City">
               <button type="submit" class="btn btn-primary mb-1">Search</button>
