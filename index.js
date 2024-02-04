@@ -1,4 +1,3 @@
-// HINTS:
 // 1. Import express and axios
 import express from "express";
 import axios from "axios";
@@ -82,7 +81,8 @@ app.post('/search', async(req, res) => {
     );
 
   } catch (error) {
-    res.status(404).send(error.message);
+    // res.status(404).send(error.message);
+    res.render("404page.ejs");
   }
 });
 
