@@ -1,7 +1,7 @@
-Skyzy Weather App
+#Skyzy Weather App
 Welcome to Skyzy, your go-to weather companion! Skyzy is a weather web application developed using Node.js, Express.js, and Ejs. It allows users to check real-time weather updates, humidity, wind speed, and visibility for multiple locations.
 
-Features
+##Features
 Real-time Weather Updates: Stay informed about the current weather conditions in your chosen locations.
 
 Comprehensive Data: Beyond just temperature, Skyzy provides detailed information on humidity, wind speed, and visibility.
