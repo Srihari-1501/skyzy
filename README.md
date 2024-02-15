@@ -1,7 +1,7 @@
-#Skyzy Weather App
+Skyzy Weather App
 Welcome to Skyzy, your go-to weather companion! Skyzy is a weather web application developed using Node.js, Express.js, and Ejs. It allows users to check real-time weather updates, humidity, wind speed, and visibility for multiple locations.
 
-##Features
+Features
 Real-time Weather Updates: Stay informed about the current weather conditions in your chosen locations.
 
 Comprehensive Data: Beyond just temperature, Skyzy provides detailed information on humidity, wind speed, and visibility.
@@ -15,23 +15,19 @@ Follow these steps to get Skyzy up and running on your local machine:
 
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/skyzy-weather-app.git
+
+git clone https://github.com/srihari-1501/skyzy-weather-app.git
 Navigate to the project directory:
 
-bash
-Copy code
+
 cd skyzy-weather-app
 Install dependencies:
 
-bash
-Copy code
+
 npm install
 Run the application:
 
-bash
-Copy code
+
 npm start
 Open your browser and go to http://localhost:3000 to explore Skyzy.
 
